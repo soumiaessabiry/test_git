@@ -1,0 +1,140 @@
+parite pratique:
+
+1 Créez un nouveau répertoire
+
+ ===>mkdir test_git
+2 
+
+===> git clone https://github.com/soumiaessabiry/test_git.git
+
+3
+
+===>git clone https://github.com/soumiaessabiry/test_git.git
+
+4
+
+====> git remote -v 
+
+5
+
+====>origin  https://github.com/soumiaessabiry/test_git.git (fetch)
+origin  https://github.com/soumiaessabiry/test_git.git (push)
+
+6
+
+====>touch git_test
+touch README.md
+
+7
+
+====>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git_test/
+8
+
+===> git add README.md
+
+9
+
+====> git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   git_test/README.md
+10
+
+====>git commit -m "Ajouter README.md"
+
+11
+
+=====>git status
+
+13
+
+====> git log
+commit 1034418ab8c3b2aea6d7d7351daa66797804e419 (HEAD -> main, origin/main)
+Author: soumiaessabiry <soumiaessabiry.se@gmail.com>
+Date:   Tue Nov 9 10:19:19 2021 +0100
+
+    Ajouter README.md
+
+commit e617cae60f549840cf510cc1a1af2d5b81ba3adb
+Author: soumiaessabiry <soumiaessabiry.se@gmail.com>
+Date:   Tue Nov 9 09:27:11 2021 +0100
+
+    test
+14
+
+====>touch hello_world.txt
+15
+
+====>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello_world.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+17
+
+===>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git_test/README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello_world.txt
+18
+
+===> git add .
+
+20
+
+====>git commit -m"votre messagr"
+[main ce8f933] votre messagr
+ 2 files changed, 3 insertions(+)
+ create mode 100644 hello_world.txt
+ 
+21
+
+====>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+22
+
+====>git push origin main
+
+23
+
+====>git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 418 bytes | 418.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/soumiaessabiry/test_git.git
+   1034418..ce8f933  main -> main
+
+
+
+
